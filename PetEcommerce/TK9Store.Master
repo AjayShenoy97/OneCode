@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TK9Store.Master.cs" Inherits="PetEcommerce.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Style/bootstrap.min.css" />
+    <script src="Script/jquery.min.js"></script>
+    <script src="Script/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="Style/TK9StyleSheet.css" />
+
+     
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <div id="logoImage" class="displayContent" runat="server">
+              <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Images/logo-pets.png" />
+          </div>  
+	<div id="navbar">
+                <nav class="navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menubar" runat="server">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                    </div>
+               
+                    <div class="collapse navbar-collapse" id="menubar"  runat="server">
+                        <ul class="nav navbar-nav">
+                            <li runat="server"><a class="active"  runat="server" href="#">Home</a></li>    
+                            <li runat="server"><a runat="server" href="#">Dog Food</a></li>
+                            <li runat="server"><a runat="server" href="#">Dog Products</a></li>
+                            <li runat="server"><a runat="server" href="#">Dog Adoption</a></li>
+                            <li runat="server"><a runat="server" href="#">About Us</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a runat="server" href="#">Cart</a></li>
+                            <li><a runat="server" href="~/Login.aspx">Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            <div class="panel-footer">
+                <asp:Label CssClass="footer" ID="lblFooter1" runat="server" Text="Contact Us"></asp:Label><br />
+                <asp:Label CssClass="footer" ID="lblFooter2" runat="server" Text="ajayshenoy32@gmail.com"></asp:Label><br />
+                <asp:Label CssClass="footer" ID="lblFooter3" runat="server" Text="9901734684"></asp:Label><br />
+                <asp:Label CssClass="footer" ID="lblFooter4" runat="server" Text="Instagram/_ajay.shenoy_"></asp:Label><br />
+            </div>
+        </div>
+            <asp:ContentPlaceHolder ID="cphK9StoreMasterPage" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
